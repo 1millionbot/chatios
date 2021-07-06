@@ -1,0 +1,27 @@
+/*
+ File.strings
+ OneMillionBot
+ 
+ Created by Adrián Rubio on 05/03/2021.
+ 
+ */
+
+"forgetData" = "Olvidar mis datos";
+"forgetDataText" = "Este procedimiento es irreversible, si continúas voy a olvidar todo sobre ti.";
+"selectLanguage" = "Seleccionar idioma";
+"selectLanguageText" = "Selecciona el idioma en el que deseas hablar con tu chatbot";
+"languages_es" = "Español";
+"languages_en" = "English";
+"languages_ca" = "Català";
+"languages_va" = "Valencià";
+"privacyPolicy" = "Política de privacidad";
+"yes" = "Sí";
+"no" = "No";
+"gdprLink" = "LEER POLÍTICA DE PRIVACIDAD";
+"typingBarPlaceholder" = "Escribe tu pregunta";
+"writing" = "Escribiendo...";
+"error" = "Ahora mismo no puedo atenderte, por favor vuelve a cargar la página, si aun así sigo sin responder espera unos instantes. Disculpa las molestias.";
+"byOneMBot" = "BY 1MILLIONBOT";
+"errorHappened" = "Ha ocurrido un error";
+"speech_permission_error" = "Insuficientes permisos para realizar tareas de dictado por voz";
+"ok" = "OK";

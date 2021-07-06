@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="M5D-lG-Kax" customClass="SPMXibCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="543"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M5D-lG-Kax" id="7DP-sw-Oc6">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="543"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wnp-bd-SNy">
+                        <rect key="frame" x="20" y="5" width="310.5" height="536"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-fg-Roi" customClass="CardView" customModule="OneMillionBot">
+                                <rect key="frame" x="0.0" y="0.0" width="310.5" height="536"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xf6-fg-Roi" secondAttribute="bottom" id="BsI-yP-k7b"/>
+                            <constraint firstItem="Xf6-fg-Roi" firstAttribute="top" secondItem="Wnp-bd-SNy" secondAttribute="top" id="EFz-2O-Dsa"/>
+                            <constraint firstAttribute="trailing" secondItem="Xf6-fg-Roi" secondAttribute="trailing" id="wMq-5j-5qK"/>
+                            <constraint firstItem="Xf6-fg-Roi" firstAttribute="leading" secondItem="Wnp-bd-SNy" secondAttribute="leading" id="xIy-t9-91N"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCb-Qe-VTS">
+                        <rect key="frame" x="340.5" y="251" width="44" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="was-2Q-bDh">
+                                <rect key="frame" x="9" y="9" width="26" height="26"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large" renderingMode="template"/>
+                                </state>
+                                <connections>
+                                    <action selector="moreCardsTapped:" destination="M5D-lG-Kax" eventType="touchUpInside" id="HUm-T6-4BD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="was-2Q-bDh" firstAttribute="top" secondItem="xCb-Qe-VTS" secondAttribute="top" constant="9" id="ES4-Ty-5cD"/>
+                            <constraint firstItem="was-2Q-bDh" firstAttribute="leading" secondItem="xCb-Qe-VTS" secondAttribute="leading" constant="9" id="PB1-h1-kyu"/>
+                            <constraint firstAttribute="bottom" secondItem="was-2Q-bDh" secondAttribute="bottom" constant="9" id="SkI-RU-GEf"/>
+                            <constraint firstAttribute="width" constant="44" id="VqE-bO-pNl"/>
+                            <constraint firstAttribute="trailing" secondItem="was-2Q-bDh" secondAttribute="trailing" constant="9" id="g4E-pp-hfr"/>
+                            <constraint firstAttribute="height" constant="44" id="qEf-R8-3qC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wnp-bd-SNy" secondAttribute="trailing" constant="20" id="2HL-iC-qfy"/>
+                    <constraint firstItem="Wnp-bd-SNy" firstAttribute="leading" secondItem="7DP-sw-Oc6" secondAttribute="leading" constant="20" id="5Wx-3m-z2A"/>
+                    <constraint firstAttribute="bottom" secondItem="Wnp-bd-SNy" secondAttribute="bottom" constant="2" id="JZY-rU-NNp"/>
+                    <constraint firstItem="xCb-Qe-VTS" firstAttribute="leading" secondItem="Wnp-bd-SNy" secondAttribute="trailing" constant="10" id="b2R-nv-6sc"/>
+                    <constraint firstItem="xCb-Qe-VTS" firstAttribute="centerY" secondItem="Wnp-bd-SNy" secondAttribute="centerY" id="dhl-a6-pvN"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wnp-bd-SNy" secondAttribute="trailing" constant="20" id="ftN-rU-02M"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xCb-Qe-VTS" secondAttribute="trailing" constant="10" id="pe5-O0-Rm7"/>
+                    <constraint firstItem="Wnp-bd-SNy" firstAttribute="leading" secondItem="7DP-sw-Oc6" secondAttribute="leading" constant="20" id="sNa-Ac-nwX"/>
+                    <constraint firstItem="Wnp-bd-SNy" firstAttribute="width" secondItem="7DP-sw-Oc6" secondAttribute="width" multiplier="0.75" priority="999" id="uWb-pc-oqM"/>
+                    <constraint firstItem="Wnp-bd-SNy" firstAttribute="top" secondItem="7DP-sw-Oc6" secondAttribute="top" constant="5" id="vyE-Z0-GBh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bubble" destination="Wnp-bd-SNy" id="DAr-5d-SXu"/>
+                <outlet property="buttonContainer" destination="xCb-Qe-VTS" id="3QI-VE-OUn"/>
+                <outlet property="cardView" destination="Xf6-fg-Roi" id="BiC-EM-QRd"/>
+                <outlet property="leading" destination="5Wx-3m-z2A" id="GNx-X3-6a6"/>
+                <outlet property="moreCards" destination="was-2Q-bDh" id="LFL-Po-H49"/>
+                <outlet property="spacerFromLeading" destination="sNa-Ac-nwX" id="Lw5-nF-L3d"/>
+                <outlet property="spacerFromTrailing" destination="2HL-iC-qfy" id="jbP-hI-Eam"/>
+                <outlet property="top" destination="vyE-Z0-GBh" id="FaA-pl-iZa"/>
+                <outlet property="trailing" destination="ftN-rU-02M" id="q2Y-n0-Ww1"/>
+            </connections>
+            <point key="canvasLocation" x="-759.4202898550725" y="125.55803571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

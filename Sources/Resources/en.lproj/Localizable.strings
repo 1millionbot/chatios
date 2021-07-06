@@ -1,0 +1,27 @@
+/* 
+ File.strings
+ OneMillionBot
+ 
+ Created by Adrián Rubio on 05/03/2021.
+ 
+ */
+
+"forgetData" = "Forget data";
+"forgetDataText" = "This procedure is irreversible, if you continue I will forget everything about you";
+"selectLanguage" = "Select language";
+"selectLanguageText" = "Select the language in which you want your chatbot to speak";
+"languages_es" = "Español";
+"languages_en" = "English";
+"languages_ca" = "Català";
+"languages_va" = "Valencià";
+"privacyPolicy" = "Privacy policy";
+"yes" = "Yes";
+"no" = "No";
+"gdprLink" = "READ PRIVACY POLICY";
+"typingBarPlaceholder" = "Write your question";
+"writing" = "Writing...";
+"error" = "Right now I can't help you, please reload the page, if I still don't respond, wait a few minutes. Sorry for the disturbances.";
+"byOneMBot" = "BY 1MILLIONBOT";
+"errorHappened" = "An error ocurred";
+"speech_permission_error" = "Insufficient permissions to begin speech to text";
+"ok" = "OK";

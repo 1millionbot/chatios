@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="173" id="9Df-3h-M2n" customClass="SPMXibVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="288" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Df-3h-M2n" id="6YY-un-cdA">
+                <rect key="frame" x="0.0" y="0.0" width="288" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tvg-Mk-9HL">
+                        <rect key="frame" x="20" y="5" width="220" height="105"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-ZK-tBb">
+                                <rect key="frame" x="0.0" y="1" width="220" height="157.5"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="bxe-oP-o6z"/>
+                                    <constraint firstAttribute="height" constant="160" id="d9y-VC-lNs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVv-7d-1Yg">
+                                <rect key="frame" x="85" y="55" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3ZF-N8-mg7"/>
+                                    <constraint firstAttribute="width" constant="50" id="MFc-ey-zhz"/>
+                                </constraints>
+                                <state key="normal">
+                                    <imageReference key="image" image="play.circle.fill" catalog="system" symbolScale="default" renderingMode="template"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressPlay:" destination="9Df-3h-M2n" eventType="touchUpInside" id="smB-29-SNC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Udc-ZK-tBb" firstAttribute="leading" secondItem="Tvg-Mk-9HL" secondAttribute="leading" id="CN1-tw-giI"/>
+                            <constraint firstAttribute="trailing" secondItem="Udc-ZK-tBb" secondAttribute="trailing" id="In0-b4-a9a"/>
+                            <constraint firstItem="mVv-7d-1Yg" firstAttribute="centerY" secondItem="Udc-ZK-tBb" secondAttribute="centerY" id="IoN-Ox-Prj"/>
+                            <constraint firstItem="mVv-7d-1Yg" firstAttribute="centerX" secondItem="Udc-ZK-tBb" secondAttribute="centerX" id="Kpp-nx-bgJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Udc-ZK-tBb" secondAttribute="bottom" id="MX5-Nv-RGm"/>
+                            <constraint firstItem="Udc-ZK-tBb" firstAttribute="top" secondItem="Tvg-Mk-9HL" secondAttribute="top" id="Nxa-5A-ZyA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tvg-Mk-9HL" secondAttribute="trailing" constant="20" id="2Es-Or-tL3"/>
+                    <constraint firstAttribute="bottom" secondItem="Tvg-Mk-9HL" secondAttribute="bottom" constant="2" id="Daj-50-B67"/>
+                    <constraint firstAttribute="trailing" secondItem="Tvg-Mk-9HL" secondAttribute="trailing" constant="20" id="FpK-6g-uRd"/>
+                    <constraint firstItem="Tvg-Mk-9HL" firstAttribute="top" secondItem="6YY-un-cdA" secondAttribute="top" constant="5" id="Gaz-ad-RN5"/>
+                    <constraint firstItem="Tvg-Mk-9HL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6YY-un-cdA" secondAttribute="leading" constant="20" id="P4O-HZ-HAf"/>
+                    <constraint firstItem="Tvg-Mk-9HL" firstAttribute="leading" secondItem="6YY-un-cdA" secondAttribute="leading" constant="20" id="wtO-rC-Py8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bubble" destination="Tvg-Mk-9HL" id="D5j-uf-p5h"/>
+                <outlet property="leading" destination="wtO-rC-Py8" id="aaE-VQ-ffe"/>
+                <outlet property="playIcon" destination="mVv-7d-1Yg" id="trc-n9-DiP"/>
+                <outlet property="spacerFromLeading" destination="P4O-HZ-HAf" id="ahV-4L-ghV"/>
+                <outlet property="spacerFromTrailing" destination="2Es-Or-tL3" id="ee2-w4-bW8"/>
+                <outlet property="thumbnail" destination="Udc-ZK-tBb" id="Cgn-Sc-Yn6"/>
+                <outlet property="top" destination="Gaz-ad-RN5" id="2xQ-xt-RnS"/>
+                <outlet property="trailing" destination="FpK-6g-uRd" id="5RX-u7-ccO"/>
+            </connections>
+            <point key="canvasLocation" x="-55.072463768115945" y="67.299107142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
