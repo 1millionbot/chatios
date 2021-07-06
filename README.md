@@ -8,7 +8,7 @@
 + Select "Up to Next Major" with "1.0.0"
 
 ## How to use it
-First of all you must add to your __NSMicrophoneUsageDescription__ and  __NSSpeechRecognitionUsageDescription__ to your _Info.plist_, as this library makes use of both permissions for the user to be able to dictate messages to our bot.
+First of all you must add __NSMicrophoneUsageDescription__ and  __NSSpeechRecognitionUsageDescription__ to your _Info.plist_, as this library makes use of both permissions for the user to be able to dictate messages to our bot.
 
 Initialize the SDK at start-up time on your `AppDelegate` by calling `OneMillionBot.initialize` and supplying your designated api key:
 
