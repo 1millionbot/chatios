@@ -40,6 +40,7 @@
 		6E3AEC6A25BF581700750C9E /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AEC6925BF581700750C9E /* URLImage.swift */; };
 		6E3AEC6F25BF5D8A00750C9E /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3AEC6E25BF5D8A00750C9E /* Avatar.swift */; };
 		6E40B13725B8A5CA000F5028 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E40B13625B8A5CA000F5028 /* Error.swift */; };
+		6E45A73D269CAB2700D13E71 /* AttributedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E45A73C269CAB2700D13E71 /* AttributedLabelView.swift */; };
 		6E53775E25DEE87A00AA3923 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53775D25DEE87A00AA3923 /* RecordingView.swift */; };
 		6E53776625DEE9EE00AA3923 /* SpeechToText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53776525DEE9EE00AA3923 /* SpeechToText.swift */; };
 		6E564D5025FD72120014C708 /* Agrume in Frameworks */ = {isa = PBXBuildFile; productRef = 6E564D4F25FD72120014C708 /* Agrume */; };
@@ -176,6 +177,7 @@
 		6E3AEC6E25BF5D8A00750C9E /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		6E40B13625B8A5CA000F5028 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		6E40B13D25B8ACE1000F5028 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		6E45A73C269CAB2700D13E71 /* AttributedLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedLabelView.swift; sourceTree = "<group>"; };
 		6E53775D25DEE87A00AA3923 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 		6E53776525DEE9EE00AA3923 /* SpeechToText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechToText.swift; sourceTree = "<group>"; };
 		6E7CB8D725E1835B007C9357 /* WritingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCell.swift; sourceTree = "<group>"; };
@@ -519,6 +521,7 @@
 		6EBA8C22266647F200A3D402 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6E45A73C269CAB2700D13E71 /* AttributedLabelView.swift */,
 				6E3AEC6325BF57EE00750C9E /* Image */,
 				6EDCB5E425D5D386008A09FB /* AlertController.swift */,
 				6EBD99FE25D70DAC00561028 /* By1MillionBot.swift */,
@@ -814,6 +817,7 @@
 				6EF58AB525BC815E00574957 /* PrivacyPolicyViewModel.swift in Sources */,
 				6E53776625DEE9EE00AA3923 /* SpeechToText.swift in Sources */,
 				6E3AEC6A25BF581700750C9E /* URLImage.swift in Sources */,
+				6E45A73D269CAB2700D13E71 /* AttributedLabelView.swift in Sources */,
 				6EA939AF2653F9B800C2A561 /* APIEndpoint.swift in Sources */,
 				6E9AF2B025C9D53200F3CAC6 /* CardView.swift in Sources */,
 				6E976ACB25BC555200829539 /* UIKit.swift in Sources */,

@@ -12,6 +12,14 @@ import UIKit
 import Agrume
 
 fileprivate final class LightContentHostingController<Content: View>: UIHostingController<Content> {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }

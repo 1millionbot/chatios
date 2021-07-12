@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
- 
+
 struct ScrollViewHeight: PreferenceKey {
     static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
@@ -32,7 +32,7 @@ struct PrivacyPolicy: View {
     
     let languages: [Language]
     let localizables: LocalizableValues
-        
+    
     init(
         config: BotConfig,
         privacyAccepted: Binding<Bool>,
@@ -61,16 +61,16 @@ struct PrivacyPolicy: View {
                 VStack {
                     ScrollView(.vertical, showsIndicators: false) {
                         if let policyText = policyHtml {
-                            Text(policyText)
-                                .foregroundColor(Color.black)
-                                .font(.roboto(.body))
-                                .padding(4)
-                                .overlay(GeometryReader {
-                                    Color.clear.preference(
-                                        key: ScrollViewHeight.self,
-                                        value: $0.size.height
-                                    )
-                                })
+                            HTMLTextView(
+                                text: policyText,
+                                padding: 42
+                            )
+                            .overlay(GeometryReader {
+                                Color.clear.preference(
+                                    key: ScrollViewHeight.self,
+                                    value: $0.size.height
+                                )
+                            })
                         }
                     }
                     .frame(maxHeight: svHeight)
@@ -84,7 +84,7 @@ struct PrivacyPolicy: View {
                     })
                     .padding(.top, 10)
                 }
-                .padding()
+                .padding(26)
                 
                 Divider()
                 
@@ -121,7 +121,7 @@ struct PrivacyPolicy: View {
             .background(Color.white)
             .cornerRadius(kCR)
             .shadow(radius: 1)
-            .padding()
+            .padding(16)
             
             Spacer()
             

@@ -5,7 +5,7 @@
 
 + File > Swift Packages > Add Package Dependency
 + Add https://github.com/1millionbot/ios-sdk
-+ Select "Up to Next Major" with "1.0.0"
++ Select "Up to Next Major" with "1.0.1"
 
 ## How to use it
 First of all you must add __NSMicrophoneUsageDescription__ and  __NSSpeechRecognitionUsageDescription__ to your _Info.plist_, as this library makes use of both permissions for the user to be able to dictate messages to our bot.
